@@ -1,110 +1,138 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ala Genealogy Reporter – Mercantile Records</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elegan & Futuristik – Mercantile Records</title>
   <style>
+    /* Tipografi */
     body {
-      background-color: #f0f8ff;
-      color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #294a72, #1f2f45);
+      color: #f1f1f1;
     }
+
+    /* Warna dan format header */
     header {
-      background-color: #3a506b;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 30px 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
+
+    /* Navigasi stylish */
     nav {
-      background-color: #5bc0eb;
       display: flex;
       justify-content: center;
-      padding: 10px 0;
-      gap: 15px;
+      padding: 15px 0;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
     }
     nav a {
-      color: #fff;
+      color: #e0e0e0;
       text-decoration: none;
-      font-weight: bold;
+      margin: 0 20px;
+      padding-bottom: 5px;
+      font-weight: 500;
+      position: relative;
     }
+    nav a:hover::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: #ffcd00;
+      width: 100%;
+      bottom: -2px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    /* Hero section elegan */
     .hero {
-      background-color: #fde74c;
-      padding: 40px;
+      padding: 80px 20px;
       text-align: center;
+      font-size: 2.4rem;
+      color: #ffecb3;
+      background: linear-gradient(135deg, rgba(255, 236, 179,0.3), rgba(255, 236, 179,0.1));
+      backdrop-filter: blur(4px);
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
     }
-    .hero h1 {
-      margin: 0;
-      color: #34495e;
-    }
+
+    /* Layout utama dengan grid */
     .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 24px;
+      max-width: 1100px;
+      margin: 40px auto;
       padding: 0 20px;
     }
-    main {
-      flex: 3;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    main, aside {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.2);
     }
-    aside {
-      flex: 1;
-      background-color: #c4e538;
-      padding: 20px;
-      border-radius: 8px;
-    }
+
+    /* Footer minimalis */
     footer {
-      background-color: #3a506b;
-      color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
       font-size: 0.9rem;
-      margin-top: 20px;
+      margin-top: 60px;
+    }
+
+    /* Responsif kecil */
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      .hero { font-size: 1.9rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Genealogy Reporter</h2>
+    Genealogy Reporter – Mercantile Records
   </header>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">Mercantile Records</a>
+    <a href="#">Records</a>
     <a href="#">Blog</a>
     <a href="#">Contact</a>
   </nav>
 
   <div class="hero">
-    <h1>Mercantile Records: Rekam Jejak Bisnis Sejarah</h1>
+    Menyelami Jejak Terperinci Arsip Mercantile dari Abad ke-17 hingga Abad ke-20
   </div>
 
   <div class="container">
     <main>
-      <h2>Ringkasan Konten</h2>
-      <p>Di sini merupakan ringkasan artikel tentang data mercantile records—arsip keuangan dan bisnis dari abad ke-17 hingga abad ke-20 di wilayah timur laut Amerika.</p>
-      <p>Gunakan area ini untuk menyisipkan penjelasan, foto, tabel atau kutipan dari sumber data. Ini akan menjadi konten utama yang mendalam seperti di halaman sumber.</p>
-      <!-- Tambahkan paragraf atau elemen lain sesuai kebutuhan -->
+      <h2>Ringkasan</h2>
+      <p>Selamat datang pada sumber terpercaya yang menyajikan arsip bisnis dan keuangan tempo dulu yang kaya akan sejarah dan informasi.</p>
+      <p>Gunakan bagian ini untuk menyajikan data, grafik, atau kutipan arsip besar yang kamu miliki—semuanya dibingkai dengan elegan dan modern.</p>
     </main>
 
     <aside>
-      <h3>Sidebar</h3>
+      <h3>Rekomendasi</h3>
       <ul>
-        <li><a href="#">Arsip NYPL</a></li>
+        <li><a href="#">Arsip Digital Sejarah</a></li>
         <li><a href="#">Sumber Tambahan</a></li>
-        <li><a href="#">Kontak & Bantuan</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
       </ul>
     </aside>
   </div>
 
   <footer>
-    &copy; 2025 Genealogy Reporter Template – Semua hak cipta dilindungi.
+    &copy; 2025 Genealogy Reporter • Hak Cipta Dilindungi
   </footer>
 </body>
 </html>
